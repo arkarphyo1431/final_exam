@@ -1,5 +1,4 @@
 import Product from "@/models/Product";
-import dbConnect from "../../../lib/db";
 
 export async function GET() {
   return Response.json(await Product.find());

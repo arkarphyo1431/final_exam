@@ -1,5 +1,5 @@
-import dbConnect from '../../../../lib/db';
-import Customer from '../../../../models/Customer';
+import dbConnect from '@/lib/db';
+import Customer from '@/models/Customer';
 
 export default async function handler(req, res) {
   const {

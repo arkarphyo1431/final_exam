@@ -1,6 +1,5 @@
-import dbConnect from '../../../lib/db';
-import Customer from '../../../models/Customer';
-
+import dbConnect from '@/lib/db';
+import Customer from '@/models/Customer';
 // GET all customers and POST new customer
 export default async function handler(req, res) {
   await dbConnect();

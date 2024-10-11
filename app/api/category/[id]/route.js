@@ -1,6 +1,4 @@
 import Category from "@/models/Category";
-import dbConnect from "../../../../lib/db";
-
 export async function GET(request, { params }) {
     const id = params.id;
     const category = await Category.findById(id)
