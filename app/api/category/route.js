@@ -1,4 +1,5 @@
 import Category from "@/models/Category";
+import dbConnect from "../../../lib/db";
 
 export async function GET() {
   const categories = await Category.find().sort({ order: -1 })

@@ -21,3 +21,4 @@ const customerSchema = new mongoose.Schema({
 // Compile and export the model
 const Customer = mongoose.model('Customer', customerSchema);
 export default Customer;
+

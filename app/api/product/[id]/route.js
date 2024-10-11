@@ -1,4 +1,5 @@
 import Product from "@/models/Product";
+import dbConnect from "../../../lib/db";
 
 export async function GET(request, { params }) {
   const id = params.id;
