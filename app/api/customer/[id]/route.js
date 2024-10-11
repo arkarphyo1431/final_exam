@@ -24,7 +24,8 @@ export default async function handler(req, res) {
 
     case 'PUT':
       try {
-        const customer = await Customer.findByIdAndUpdate(id, req.body, { new: true, runValidators: true });
+        const body = await req.body; // Parse the request body for update
+        const customer = await Customer.findByIdAndUpdate(id, body, { new: true, runValidators: true });
         if (!customer) {
           return res.status(404).json({ error: 'Customer not found' });
         }
